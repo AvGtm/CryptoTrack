@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cryptocurrency Tracker</title>
+    <style type="text/css">
+		
+		body{
+			background-image:url(im3.jpg);
+			background-size: unset;
+			background-attachment: fixed;
+		}
+
+		.container{
+			background: rgba(255, 255, 255, 0.89);
+			width: 50%;
+			padding: 40px;
+			margin: 100px auto;
+			font-family: calibri;
+			border-radius: 10px;
+		}
+
+		
+
+	</style>
+
+</head>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'fd77eaef-4c41-4a8d-a5a9-fd51665dfaf3', f: true }); done = true; } }; })();</script>
+<body>
+    <div class="container">
+
+        <div class="row justified-content-center">
+            <h1 class="col-md-12 text-center">Welcome to Crypto Tracker</h1>
+    <h3 class="col-md-11 text-center">By AvG</h3>
+    <div class="col-md-11  justified-content-center">
+   <p align="center"><img class="img-crypto" src="im1.jfif" alt="crpto"></p> 
+    </div>
+    
+            <div class="col-md-12 justified-content-center">
+            <div class="col-12">
+                <form action="" id="searchForm">
+                    <div class="form-row">
+                        <div class="col-10 form-group">
+                           
+                            <p align="center"> <label for="x"><b>Coin Name and Conversion currency pair</b></label></p>
+                            <select name="coinType" class="form-control" id="x" >
+                                <option value="btc-usd">Bitcoin-USD</option>
+                                <option value="xrp-usd">Ripple-USD</option>
+                                <option value="eth-usd">Ether-USD</option>
+                                <option value="ltc-usd">Litecoin-USD</option>
+                                <option value="doge-usd">Dogecoin-USD</option>
+                            </select>
+                       
+                        </div>
+                    </div>
+                   
+                     <button type="Submit" class="col-10 btn btn-primary">Submit</button>
+                </form>
+            </div>
+            </div>
+            
+    <div class="col-md-10 text-center row justify-content-center">
+        <table class="col-md-10 m-2 " border="1px" id="tableresult">
+           
+        </table>
+        
+    </div>
+   
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="appp.js"></script>
+
+</body>
+</html>
